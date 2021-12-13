@@ -8,48 +8,76 @@
   <body>
     <header>
       <nav id="navbar">
-        | <a href="index.html">Home</a> 
-        | <a href="about.html">About</a> 
-        | <a href="contact.html">Contact</a> 
+        | <a href="./index.html">Home</a>
+        | <a href="./contact.html">Contact</a> 
         |
       </nav>
+   
     </header>
 
+    
+
+    <br>
+    <br>
     <div class="title">
       <p>
-        <h2><span class="italic">Hi, I'm</span></h2>
+        ---------------------------------------------------------------------------------------------
+        <h2 class="italic">Welcome! My name is</h2>
         <h1>CÉCILIA DANINTHE</h1>
+        ---------------------------------------------------------------------------------------------
+
       </p>
     </div>
-    <p>
-      Welcome to my world!
-    </p>
+
+
     <h2>Who am I?</h2>
-    <div class="gallery">
-      <img
-        src="./images/questionMark.jpg"
-       alt="Professional Dancer"
-      />
-      <img
-        src="./images/questionMark.jpg"
-        alt="Yoga & Meditation Teacher"
-      />
-     <img
-        src="./images/questionMark.jpg"
-        alt="Wellness Coach"
-      />
-     <img
-        src="./images/questionMark.jpg"
-        alt="Software Engineer (soon to be)"
-     />
-    </div>
-    Professional Dancer
-    Yoga & Meditation Teacher
-    Wellness Coach
-    Software Engineer (soon to be)
+    <center>(click each photo and try to guess who I am)</center>
+    <br>
+    <br>  
 
+    <section>
+      <div>
+        <img
+          id="dancer"
+          src="./images/whoami.jpeg"
+          alt="Professional Dancer"
+          onclick="document.getElementById('dancer').src='./images/dancer.jpg', document.getElementById('dancer').title='Professional Dancer'"       
+        />
+      </div>
+      
+      <div>
+        <img
+          id="yoga"
+          src="./images/whoami.jpeg"
+          alt="Yoga & Meditation Teacher"
+          onclick="document.getElementById('yoga').src='./images/yoga.jpg', document.getElementById('yoga').title='Yoga & Meditation Teacher'"       
+        />
+      </div>
 
+      <div>
+        <img
+          id="wellness"
+          src="./images/whoami.jpeg"
+          alt="Wellness Coach"
+          onclick="document.getElementById('wellness').src='./images/wellness.jpg', document.getElementById('wellness').title='Wellness Coach'"       
 
+        />
+      </div>
+
+      <div>
+        <img
+          id="code"
+          src="./images/whoami.jpeg"
+          alt="Software Engineer (soon to be)"
+          onclick="document.getElementById('code').src='./images/code.jpg', document.getElementById('code').title='Software Engineer (soon to be)'"       
+        />
+      </div>
+    </section>
+    
+    <br>
+
+    <button onclick="getAnswer()">See Correct Answer</button>
+    <p id="answer"></p>
 
 
     
